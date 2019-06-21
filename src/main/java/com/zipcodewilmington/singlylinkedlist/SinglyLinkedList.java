@@ -1,18 +1,24 @@
 package com.zipcodewilmington.singlylinkedlist;
 import java.util.Comparator;
+import java.util.List;
+
 
 /**
  * Created by leon on 1/10/18.
  */
 
+/**
+ * Null terminated singly linked list
+ * @param <T> must extend Comparable for sorting
+ */
 public class SinglyLinkedList<T extends Comparable<T>> {
     private Node<T> head;
-    private Node<T> tail;
+    private Node<T> last;
     private int size;
 
     public SinglyLinkedList() {
-        this.tail = null;
         this.head = null;
+        this.last = null;
         this.size = 0;
     }
 
@@ -27,10 +33,15 @@ public class SinglyLinkedList<T extends Comparable<T>> {
     }
 
     public void add(T t) {
-        if (size == 0) this.head = new Node<T>(this.tail, t);
+        Node newNode = new Node<T>(null, t);
+        if (size == 0) {
+            this.head = newNode;
+            this.last = this.head;
+        }
         else {
-            Node next = new Node<T>(this.head.next, this.head.data);
-            this.head = new Node<T>(next, t);
+            Node prevLast = this.last;
+            this.last = newNode;
+            prevLast.next = this.last;
         }
         this.size++;
     }
@@ -57,18 +68,19 @@ public class SinglyLinkedList<T extends Comparable<T>> {
     public boolean contains(T t) {
         Node currentNode = this.head;
         while (currentNode != null) {
-            T data = (T)currentNode.data;
-            if (data.equals(t)) return true;
+            if (currentNode.data.equals(t)) return true;
+            currentNode = currentNode.next;
         }
         return false;
     }
 
-    public int find(int index) throws IndexOutOfBoundsException {
-        checkValidIndex(index);
+    public int find(T t) {
         Node currentNode = this.head;
         int i = 0;
         while (currentNode != null) {
-            if (i == index) return index;
+            if (currentNode.data.equals(t)) return i;
+            currentNode = currentNode.next;
+            i++;
         }
         return -1;
     }
@@ -76,27 +88,33 @@ public class SinglyLinkedList<T extends Comparable<T>> {
     public int size() {
         return this.size;
     }
-    
+
     public T get(int index) throws IndexOutOfBoundsException {
         checkValidIndex(index);
-        T foundData = null;
         Node currentNode = this.head;
         int i = 0;
         while (currentNode != null) {
-            if (i == index) {
-                foundData = (T)currentNode.data;
-                break;
-            }
+            if (i == index) return  (T)currentNode.data;
+            currentNode = currentNode.next;
+            i++;
         }
-        return foundData;
+        return null;
     }
 
-    public SinglyLinkedList<T> copy() {return this; }
+    public SinglyLinkedList<T> reverse() {
+        return null;
+    }
 
-    public void sort() {}
+    public SinglyLinkedList<T> copy() {
+        return this; }
+
+    public void sort(Comparable comparable) {
+
+    }
 
     private void checkValidIndex(int index) throws IndexOutOfBoundsException {
         if (index < 0 | index >= size) throw new IndexOutOfBoundsException();
     }
+
 
 }
