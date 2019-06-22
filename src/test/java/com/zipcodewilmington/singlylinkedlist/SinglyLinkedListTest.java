@@ -16,6 +16,7 @@ public class SinglyLinkedListTest {
         Assert.assertEquals(sll.size(), 1);
         Assert.assertEquals(sll.get(0), i);
     }
+
     @Test
     public void add2() {
         SinglyLinkedList<Integer> sll = new SinglyLinkedList<Integer>();
@@ -28,7 +29,7 @@ public class SinglyLinkedListTest {
         sll.add(k);
         sll.add(x);
         Assert.assertEquals(sll.size(), 4);
-       // Assert.assertEquals(sll.get(0), i);
+        // Assert.assertEquals(sll.get(0), i);
     }
 
     @Test
@@ -135,10 +136,37 @@ public class SinglyLinkedListTest {
     @Test
     public void copy() {
         SinglyLinkedList sll = new SinglyLinkedList();
+        Integer i = 1;
+        Integer j = 2;
+        Integer k = 3;
+        sll.add(i);
+        sll.add(j);
+        sll.add(k);
+        SinglyLinkedList copied = sll.copy();
+        Assert.assertEquals(i, copied.get(0));
+        Assert.assertEquals(j, copied.get(1));
+        Assert.assertEquals(k, copied.get(2));
+        Assert.assertFalse(copied.equals(sll));
+        Assert.assertNotSame(copied, sll);
     }
 
     @Test
     public void sort() {
         SinglyLinkedList sll = new SinglyLinkedList();
+    }
+
+    @Test
+    public void reverse() {
+        SinglyLinkedList sll = new SinglyLinkedList();
+        Integer i = 1;
+        Integer j = 2;
+        Integer k = 3;
+        sll.add(i);
+        sll.add(j);
+        sll.add(k);
+        SinglyLinkedList reversed = sll.reverse();
+        Assert.assertEquals(k, reversed.get(0));
+        Assert.assertEquals(j, reversed.get(1));
+        Assert.assertEquals(i, reversed.get(2));
     }
 }

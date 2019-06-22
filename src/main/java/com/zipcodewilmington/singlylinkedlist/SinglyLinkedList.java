@@ -16,6 +16,18 @@ public class SinglyLinkedList<T extends Comparable<T>> {
     private Node<T> last;
     private int size;
 
+    public SinglyLinkedList(int size) {
+        this.size = size;
+        this.head = new Node<T>(null, null);
+        Node currentNode = this.head;
+        for (int i = 0; i < size; i++) {
+            currentNode.next = new Node(null, null);
+            currentNode = currentNode.next;
+        }
+        this.last = currentNode;
+
+    }
+
     public SinglyLinkedList() {
         this.head = null;
         this.last = null;
@@ -102,14 +114,30 @@ public class SinglyLinkedList<T extends Comparable<T>> {
     }
 
     public SinglyLinkedList<T> reverse() {
-        return null;
+        SinglyLinkedList<T> reversed = new SinglyLinkedList<T>(this.size);
+        Node reverseNode = reversed.head;
+        int i = this.size-1;
+        while (reverseNode != null && i >= 0) {
+            reverseNode.data = this.get(i);
+            reverseNode = reverseNode.next;
+            i--;
+        }
+        return reversed;
     }
 
     public SinglyLinkedList<T> copy() {
-        return this; }
+        SinglyLinkedList<T> duplicated = new SinglyLinkedList<T>(this.size);
+        Node originalNode = this.head;
+        Node copyNode = duplicated.head;
+        while (originalNode != null) {
+            copyNode.data = originalNode.data;
+            originalNode = originalNode.next;
+            copyNode = copyNode.next;
+        }
+        return duplicated;
+    }
 
-    public void sort(Comparable comparable) {
-
+    public void sort() {
     }
 
     private void checkValidIndex(int index) throws IndexOutOfBoundsException {
