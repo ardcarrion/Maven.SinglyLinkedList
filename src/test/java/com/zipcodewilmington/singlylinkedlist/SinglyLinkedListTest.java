@@ -29,7 +29,6 @@ public class SinglyLinkedListTest {
         sll.add(k);
         sll.add(x);
         Assert.assertEquals(sll.size(), 4);
-        // Assert.assertEquals(sll.get(0), i);
     }
 
     @Test
@@ -134,6 +133,25 @@ public class SinglyLinkedListTest {
     }
 
     @Test
+    public void get3() {
+        SinglyLinkedList sll = new SinglyLinkedList();
+        Integer i = 5;
+        Integer j = 2;
+        Integer k = 6;
+        Integer x = 102;
+        Integer y = 120;
+        Integer z = 0;
+        sll.add(i);
+        sll.add(j);
+        sll.add(k);
+        sll.add(x);
+        sll.add(y);
+        sll.add(z); //before = {5, 2, 6, 102, 120, 0}
+        Assert.assertEquals(z, sll.get(5));
+        sll.sort();
+        Assert.assertEquals(z, sll.get(0));
+    }
+    @Test
     public void copy() {
         SinglyLinkedList sll = new SinglyLinkedList();
         Integer i = 1;
@@ -153,6 +171,42 @@ public class SinglyLinkedListTest {
     @Test
     public void sort() {
         SinglyLinkedList sll = new SinglyLinkedList();
+        Integer i = 1;
+        sll.add(i);
+        sll.sort();
+        Assert.assertEquals(i, sll.get(0));
+    }
+
+    @Test
+    public void sort2() {
+        SinglyLinkedList sll = new SinglyLinkedList();
+        Integer i = 5;
+        Integer j = 2;
+        Integer k = 6;
+        sll.add(i);
+        sll.add(j);
+        sll.add(k);
+        sll.sort();
+        Assert.assertEquals(j, sll.get(0));
+    }
+
+    @Test
+    public void sort3() {
+        SinglyLinkedList sll = new SinglyLinkedList();
+        Integer i = 5;
+        Integer j = 2;
+        Integer k = 6;
+        Integer x = 102;
+        Integer y = 120;
+        Integer z = 0;
+        sll.add(i);
+        sll.add(j);
+        sll.add(k);
+        sll.add(x);
+        sll.add(y);
+        sll.add(z); //before = {5, 2, 6, 102, 120, 0}
+        sll.sort(); //expected = {0, 2, 5, 6, 102, 120
+        Assert.assertTrue(SinglyLinkedList.isSorted(sll));
     }
 
     @Test
@@ -168,5 +222,34 @@ public class SinglyLinkedListTest {
         Assert.assertEquals(k, reversed.get(0));
         Assert.assertEquals(j, reversed.get(1));
         Assert.assertEquals(i, reversed.get(2));
+    }
+
+    @Test
+    public void isSortedTest() {
+        SinglyLinkedList sll = new SinglyLinkedList();
+        Integer i = 1;
+        Integer j = 2;
+        Integer k = 3;
+        sll.add(i);
+        sll.add(j);
+        sll.add(k);
+        Assert.assertTrue(SinglyLinkedList.isSorted(sll));
+    }
+    @Test
+    public void isSortedTest2(){
+        SinglyLinkedList sll = new SinglyLinkedList();
+        Integer i = 5;
+        Integer j = 2;
+        Integer k = 6;
+        Integer x = 102;
+        Integer y = 120;
+        Integer z = 0;
+        sll.add(z);
+        sll.add(j);
+        sll.add(i);
+        sll.add(k);
+        sll.add(x);
+        sll.add(y); //before = {5, 2, 6, 102, 120, 0}
+        Assert.assertTrue(SinglyLinkedList.isSorted(sll));
     }
 }

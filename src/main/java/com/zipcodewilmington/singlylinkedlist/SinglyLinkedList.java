@@ -28,6 +28,7 @@ public class SinglyLinkedList<T extends Comparable<T>> {
 
     }
 
+
     public SinglyLinkedList() {
         this.head = null;
         this.last = null;
@@ -35,7 +36,7 @@ public class SinglyLinkedList<T extends Comparable<T>> {
     }
 
     public class Node<T> {
-        Node next;
+        Node<T> next;
         T data;
 
         Node(Node next, T data) {
@@ -138,6 +139,27 @@ public class SinglyLinkedList<T extends Comparable<T>> {
     }
 
     public void sort() {
+        if (size <= 1) return;
+        Node currentNode = this.head;
+        Node nextNode = this.head.next;
+        while (!isSorted(this)) {
+            T value = (T)currentNode.data;
+            T nextValue = (T)nextNode.data;
+            if (value.compareTo(nextValue) > 0) {
+                currentNode.data = nextValue;
+                nextNode.data = value;
+            }
+            currentNode = nextNode;
+            if (nextNode.equals(last))  nextNode = this.head;
+            else nextNode = nextNode.next;
+        }
+    }
+
+    protected static Boolean isSorted(SinglyLinkedList sll) {
+        for (int i =0; i < sll.size-1; i++) {
+            if (sll.get(i).compareTo(sll.get(i+1)) > 0) return false;
+        }
+        return true;
     }
 
     private void checkValidIndex(int index) throws IndexOutOfBoundsException {

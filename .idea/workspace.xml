@@ -22,12 +22,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="134" column="37" selection-start-line="134" selection-start-column="37" selection-end-line="134" selection-end-column="37" />
+            <state relative-caret-position="123">
+              <caret line="160" column="9" lean-forward="true" selection-start-line="160" selection-start-column="9" selection-end-line="160" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2109#2110#0" expanded="true" />
-                <element signature="e#2141#2142#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -36,11 +34,35 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedListTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="149" column="42" lean-forward="true" selection-start-line="149" selection-start-column="42" selection-end-line="149" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="218">
+              <caret line="237" column="53" lean-forward="true" selection-start-line="237" selection-start-column="53" selection-end-line="237" selection-end-column="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="194" column="25" selection-start-line="194" selection-start-column="25" selection-end-line="194" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -67,7 +89,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="74" />
+    <option name="x" value="36" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="725" />
@@ -77,6 +99,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -139,7 +162,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -176,7 +198,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in singlylinkedlist">
+  <component name="RunManager" selected="JUnit.SinglyLinkedListTest.get3">
     <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
       <setting name="environment" value="" />
       <setting name="specsToExecute" value="" />
@@ -202,15 +224,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="All in singlylinkedlist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="singlylinkedlist" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SinglyLinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="singlylinkedlist" />
       <extension name="coverage">
@@ -227,7 +240,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest.copy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SinglyLinkedListTest.get3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="singlylinkedlist" />
       <extension name="coverage">
         <pattern>
@@ -237,14 +250,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.zipcodewilmington.singlylinkedlist" />
       <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.singlylinkedlist.SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="copy" />
+      <option name="METHOD_NAME" value="get3" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest.find3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SinglyLinkedListTest.isSortedTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="singlylinkedlist" />
       <extension name="coverage">
         <pattern>
@@ -254,14 +267,14 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.zipcodewilmington.singlylinkedlist" />
       <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.singlylinkedlist.SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="find3" />
+      <option name="METHOD_NAME" value="isSortedTest2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest.reverse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SinglyLinkedListTest.sort2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="singlylinkedlist" />
       <extension name="coverage">
         <pattern>
@@ -271,7 +284,24 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.zipcodewilmington.singlylinkedlist" />
       <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.singlylinkedlist.SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="reverse" />
+      <option name="METHOD_NAME" value="sort2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SinglyLinkedListTest.sort3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="singlylinkedlist" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zipcodewilmington.singlylinkedlist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zipcodewilmington.singlylinkedlist" />
+      <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.singlylinkedlist.SinglyLinkedListTest" />
+      <option name="METHOD_NAME" value="sort3" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -339,11 +369,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in singlylinkedlist" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.copy" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.reverse" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.get3" />
         <item itemvalue="JUnit.SinglyLinkedListTest" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.find3" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.isSortedTest2" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.sort3" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.sort2" />
       </list>
     </recent_temporary>
   </component>
@@ -361,49 +391,51 @@
       <workItem from="1560893974723" duration="665000" />
       <workItem from="1560947404060" duration="8441000" />
       <workItem from="1561060990408" duration="5034000" />
-      <workItem from="1561152950188" duration="1303000" />
+      <workItem from="1561152950188" duration="1706000" />
+      <workItem from="1561166827901" duration="6524000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SinglyLinkedListTest - 2019.06.20 at 18h 42m 58s.xml">
+    <history-entry file="SinglyLinkedListTest_isSortedTest - 2019.06.21 at 23h 00m 42s.xml">
+      <configuration name="SinglyLinkedListTest.isSortedTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SinglyLinkedListTest_isSortedTest - 2019.06.21 at 23h 07m 06s.xml">
+      <configuration name="SinglyLinkedListTest.isSortedTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SinglyLinkedListTest_sort - 2019.06.21 at 23h 07m 17s.xml">
+      <configuration name="SinglyLinkedListTest.sort" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SinglyLinkedListTest_sort2 - 2019.06.21 at 23h 07m 20s.xml">
+      <configuration name="SinglyLinkedListTest.sort2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SinglyLinkedListTest_sort3 - 2019.06.21 at 23h 07m 51s.xml">
+      <configuration name="SinglyLinkedListTest.sort3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SinglyLinkedListTest_sort3 - 2019.06.21 at 23h 08m 42s.xml">
+      <configuration name="SinglyLinkedListTest.sort3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SinglyLinkedListTest_sort3 - 2019.06.21 at 23h 08m 48s.xml">
+      <configuration name="SinglyLinkedListTest.sort3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SinglyLinkedListTest_sort3 - 2019.06.21 at 23h 11m 58s.xml">
+      <configuration name="SinglyLinkedListTest.sort3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SinglyLinkedListTest_sort3 - 2019.06.21 at 23h 14m 56s.xml">
+      <configuration name="SinglyLinkedListTest.sort3" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SinglyLinkedListTest - 2019.06.21 at 23h 15m 36s.xml">
       <configuration name="SinglyLinkedListTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SinglyLinkedListTest_find3 - 2019.06.20 at 18h 45m 02s.xml">
-      <configuration name="SinglyLinkedListTest.find3" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SinglyLinkedListTest_find3 - 2019.06.20 at 18h 45m 09s.xml">
-      <configuration name="SinglyLinkedListTest.find3" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SinglyLinkedListTest - 2019.06.20 at 18h 45m 12s.xml">
-      <configuration name="SinglyLinkedListTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SinglyLinkedListTest_reverse - 2019.06.21 at 17h 51m 25s.xml">
-      <configuration name="SinglyLinkedListTest.reverse" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SinglyLinkedListTest_copy - 2019.06.21 at 17h 53m 09s.xml">
-      <configuration name="SinglyLinkedListTest.copy" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SinglyLinkedListTest_copy - 2019.06.21 at 17h 53m 29s.xml">
-      <configuration name="SinglyLinkedListTest.copy" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SinglyLinkedListTest_copy - 2019.06.21 at 17h 54m 32s.xml">
-      <configuration name="SinglyLinkedListTest.copy" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SinglyLinkedListTest_copy - 2019.06.21 at 17h 54m 58s.xml">
-      <configuration name="SinglyLinkedListTest.copy" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SinglyLinkedListTest_copy - 2019.06.21 at 17h 55m 23s.xml">
-      <configuration name="SinglyLinkedListTest.copy" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20332000" />
+    <option name="totallyTimeSpent" value="27259000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="74" y="23" width="1280" height="725" extended-state="0" />
+    <frame x="36" y="23" width="1280" height="725" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19386107" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.38045233" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -413,8 +445,8 @@
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.23854661" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.49289098" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39968404" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -435,6 +467,7 @@
       <window_info anchor="right" id="Maven Projects" order="8" />
       <window_info anchor="right" id="Maven" order="9" />
       <window_info anchor="right" id="Database" order="10" />
+      <window_info anchor="right" id="Coverage" order="11" side_tool="true" visible="true" weight="0.04361874" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -442,6 +475,9 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/singlylinkedlist$All_in_singlylinkedlist.ic" NAME="All in singlylinkedlist Coverage Results" MODIFIED="1561165165693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/singlylinkedlist$SinglyLinkedListTest.ic" NAME="SinglyLinkedListTest Coverage Results" MODIFIED="1561169786049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.zipcodewilmington.singlylinkedlist.*</FILTER>
+    </SUITE>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/singlylinkedlist.java" />
@@ -477,25 +513,52 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="194" column="25" selection-start-line="194" selection-start-column="25" selection-end-line="194" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/statements/InvokeMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#870#1063#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="134" column="37" selection-start-line="134" selection-start-column="37" selection-end-line="134" selection-end-column="37" />
+        <state relative-caret-position="123">
+          <caret line="160" column="9" lean-forward="true" selection-start-line="160" selection-start-column="9" selection-end-line="160" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2109#2110#0" expanded="true" />
-            <element signature="e#2141#2142#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="149" column="42" lean-forward="true" selection-start-line="149" selection-start-column="42" selection-end-line="149" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="218">
+          <caret line="237" column="53" lean-forward="true" selection-start-line="237" selection-start-column="53" selection-end-line="237" selection-end-column="53" />
         </state>
       </provider>
     </entry>
